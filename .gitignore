@@ -9,6 +9,7 @@
 .history
 .svn/
 migrate_working_dir/
+node_modules/
 
 # IntelliJ related
 *.iml
@@ -41,6 +42,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/build/
+/android/app/.cxx/
 
 # FVM Version Cache
 .fvm/
