@@ -9,7 +9,7 @@ class PokemonModule(
 ) : NativePokemonModuleSpec(reactContext) {
 
     override fun setFavorite(favorite: Boolean) {
-        ChannelResolver.favorite = favorite
+        ChannelResolver.isFavorite = favorite
     }
 
     override fun exit() {

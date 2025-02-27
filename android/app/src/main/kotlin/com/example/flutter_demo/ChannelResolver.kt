@@ -5,14 +5,14 @@ import io.flutter.plugin.common.MethodChannel
 object ChannelResolver {
 
     private var pendingResult: MethodChannel.Result? = null
-    var favorite: Boolean? = null
+    var isFavorite: Boolean? = null
 
     fun setPendingResult(result: MethodChannel.Result) {
-        favorite = null
+        isFavorite = null
         pendingResult = result
     }
 
     fun resolve() {
-        pendingResult?.success(favorite)
+        pendingResult?.success(isFavorite)
     }
 }
