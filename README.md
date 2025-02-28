@@ -1,16 +1,27 @@
-# flutter_demo
+# Flutter Demo
 
-A new Flutter project.
+A demo to show how to integrate a React Native screen inside a Flutter app.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+<img src="https://github.com/gbiktx/flutter_demo_rn_integration/blob/main/demo.gif" width="200" height="400">
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How is this posible?
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is posible by [integrating react native with an existing app](https://reactnative.dev/docs/0.74/integration-with-existing-apps?language=kotlin)
+
+![open react](flutter_to_rn.png)
+
+![back to flutter](rn_to_flutter.png)
+
+
+
+[Here](https://github.com/gbiktx/rn-demo-app) is the react native app used in this demo.
+
+## Checklist
+[ ] iOS support
+[ ] Autolinking
+
+## Versions
+- Java 17
+- Node v22
