@@ -19,8 +19,8 @@ This is posible by [integrating react native with an existing app](https://react
 [Here](https://github.com/gbiktx/rn-demo-app) is the react native app used in this demo.
 
 ## Checklist
-[ ] iOS support
-[ ] Autolinking
+- [ ] iOS support
+- [ ] Autolinking
 
 ## Versions
 - Java 17
