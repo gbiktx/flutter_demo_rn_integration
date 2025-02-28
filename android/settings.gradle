@@ -8,6 +8,7 @@ pluginManagement {
     }()
 
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
+    includeBuild("../node_modules/@react-native/gradle-plugin")
 
     repositories {
         google()
@@ -15,11 +16,12 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-
 plugins {
     id "dev.flutter.flutter-plugin-loader" version "1.0.0"
-    id "com.android.application" version "8.1.0" apply false
+    id "com.android.application" version '8.8.0' apply false
     id "org.jetbrains.kotlin.android" version "1.8.22" apply false
+    id "com.facebook.react.settings"
 }
-
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
 include ":app"
+includeBuild('../node_modules/@react-native/gradle-plugin')

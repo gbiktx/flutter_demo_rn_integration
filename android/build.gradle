@@ -4,8 +4,25 @@ allprojects {
         mavenCentral()
     }
 }
+buildscript {
+    ext {
+        buildToolsVersion = "35.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 35
+        targetSdkVersion = 35
+        ndkVersion = "27.1.12297006"
+        kotlinVersion = "2.0.21"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.facebook.react:react-native-gradle-plugin")
+    }
+}
 
-rootProject.buildDir = "../build"
+rootProject.buildDir = "build"
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
@@ -16,3 +33,5 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+
+apply plugin: "com.facebook.react.rootproject"

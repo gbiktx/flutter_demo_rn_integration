@@ -1,0 +1,24 @@
+{
+  "name": "ReactNativeDemo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "yarn react-native start"
+  },
+  "codegenConfig": {
+    "name": "NativePokemonModuleSpec",
+    "type": "modules",
+    "jsSrcsDir": "specs",
+    "android": {
+      "javaPackageName": "com.example.flutter_demo"
+    }
+  },
+  "dependencies": {
+    "react-native": "0.77"
+  },
+  "devDependencies": {
+    "@react-native-community/cli": "15.0.1",
+    "@react-native-community/cli-platform-android": "15.0.1",
+    "@react-native-community/cli-platform-ios": "15.0.1"
+  }
+}
